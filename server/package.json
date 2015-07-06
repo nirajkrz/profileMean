@@ -1,0 +1,19 @@
+{
+    "name": "profile-admin-tool",
+    "version": "1.0.0",
+    "description": "To fetch and update Profile Data from MongoDB",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "nkuma15@searshc.com",
+    "license": "",
+    "dependencies": {
+      "body-parser": "^1.10.1",
+      "express": "^4.11.0",
+      "lodash": "^2.4.1",
+      "method-override": "^2.3.1",
+      "mongoose": "3.8",
+      "node-restful": "^0.1.17"
+    }
+}

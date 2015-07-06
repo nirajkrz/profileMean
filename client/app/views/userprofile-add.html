@@ -1,0 +1,21 @@
+<!-- Form for adding a user detail
+ -->
+<form role="form">
+    <div class="form-group">
+        <label for="title" class="control-label">Name</label>
+        <input type="text" ng-model="user.name" class="form-control" id="name" placeholder="Enter the Name">
+    </div>
+    <div class="form-group">
+        <label for="title" class="control-label">Email</label>
+        <input type="text" ng-model="user.email" class="form-control" id="email" placeholder="Enter the Email">
+    </div>
+    <div class="form-group">
+        <label for="title" class="control-label">Phone Number</label>
+        <input type="text" ng-model="user.number" class="form-control" id="phoneNumber" placeholder="Enter user's Phone number">
+    </div>
+    <div class="form-group">
+        <label for="title" class="control-label">Member Status</label>
+        <input type="text" ng-model="user.memberStatus" class="form-control" id="memberStatus" placeholder="Enter Member Status">
+    </div>
+    <input type="submit" class="btn btn-primary" ng-click="saveUserProfile()" value="Save">
+</form>

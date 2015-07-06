@@ -1,0 +1,28 @@
+<a class="btn btn-primary" href="/#/create/userprofile"><span class="glyphicon glyphicon-plus"></span> Create a new profile</a>
+<br/>
+<table class="table table-striped" ng-controller="UserprofileCtrl as vm">
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone number</th>
+    <th>Member Status</th>
+  </thead>
+  <tbody>
+  <tr ng-repeat="user in vm.userprofile">
+      <td><a ng-href="/#/userprofile/{{ user._id }}">{{ user.name }}</a></td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.number }}</td>
+      <td>{{ user.memberStatus}}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="/#/userprofile/{{user._id }}/edit" class="btn btn-default">
+            <span class="glyphicon glyphicon-edit"></span>
+          </a>
+          <a ng-href="/#/userprofile/{{user._id }}/delete" class="btn btn-danger">
+            <span class="glyphicon glyphicon glyphicon-remove-sign"></span>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
